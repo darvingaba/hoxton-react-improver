@@ -1,0 +1,73 @@
+{
+  "patient":{
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
+    "name": "John Doe",
+    "email": "johndoe@gmail.com",
+    "phone": "555-555-5555",
+    "date" : "01/01/2000",
+    "time" : "12:00 PM",
+    "symptoms":"Fever, Cough, Chills, Runny Nose, Sore Throat, Headache, Stuffy Nose, and Sneezing"
+  },
+  "doctors":[
+    {
+      "id": 1,
+      "name" :"Dr. Bill Joe",
+      "specializedIn":"Allergies",
+      "free": true
+    },
+    {
+      "id": 2,
+      "name":"Dr. Kim Jong Un",
+      "specializedIn":"Cardiology",
+      "free":false
+    },
+    {
+      "id":3,
+      "name":"Dr. Hulk Hogan",
+      "specializedIn":"Dermatology",
+      "free": true
+    },
+    {
+      "id":4,
+      "name":"Dr. Disrespect",
+      "specializedIn":"Gastroenterology",
+      "free": false
+    },
+    {
+      "id":5,
+      "name":"Dr. Harry Maguire",
+      "specializedIn":"Defense",
+      "free": true
+    },
+    {
+      "id":6,
+      "name":"Dr. Bill Clinton",
+      "specializedIn":"Neurology",
+      "free": true
+    },
+    {
+      "id":7,
+      "name":"Dr. Bill Gates",
+      "specializedIn":"Oncology",
+      "free": true
+    },
+    {
+      "id":8,
+      "name":"Dr. Tom Cruise",
+      "specializedIn":"Pediatrics",
+      "free": true
+    },
+    {
+      "id":9,
+      "name":"Dr. Lewis Hamilton",
+      "specializedIn":"Psychiatry",
+      "free": true
+    },
+    {
+      "id":10,
+      "name":"Dr. Conor McGregor",
+      "specializedIn":"Radiology",
+      "free": true
+    }
+  ]
+}
