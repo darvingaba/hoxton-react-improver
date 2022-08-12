@@ -8,7 +8,19 @@ type Doctor = {
     free: boolean;
 }
 
-export function DoctorPage (){
+type Patient = {
+  name: string;
+  email: string;
+  phone: string;
+  date: string;
+  time: string;
+  symptoms: string;
+};
+type Props = {
+    patient: Patient;
+}
+
+export function DoctorPage ({patient} : Props) {
     let [doctor, setDoctor] = useState<Doctor>({} as Doctor);
 
     const params = useParams();
@@ -21,13 +33,32 @@ export function DoctorPage (){
           });
     },[])
 
+     function changeAvailability(){
+        fetch(`http://localhost:3001/doctors/${params.id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                free: !doctor.free,
+            }),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            setDoctor(data);
+          });
+    }
+
     return(
         <div className="doctorPage">
             <div className="title">
                 <h1> {doctor.name}</h1>
                 <p>Here is the doctor</p>
                 <p>For : {doctor.specializedIn}</p>
-                <p>Availability : {doctor.free ? "Free" : "Not free"}</p>
+                <p>Availability : {doctor.free ? "Free" : `Occupied for ${patient.time}, date ${patient.date}`}</p>
+                <button
+                    onClick={changeAvailability}   
+                >Change availability</button>
 
             </div>
         </div>
