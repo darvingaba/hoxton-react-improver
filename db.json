@@ -3,16 +3,16 @@
     "name": "Darvin Gaba",
     "email": "darvingaba1@gmail.com",
     "phone": "+355682651902",
-    "date": "3232-02-02",
-    "time": "03:22",
-    "symptoms": "rgh"
+    "date": "2022-01-01",
+    "time": "13:00",
+    "symptoms": "I have my a stomach ache"
   },
   "doctors": [
     {
       "id": 1,
       "name": "Dr. Bill Joe",
       "specializedIn": "Allergies",
-      "free": false
+      "free": true
     },
     {
       "id": 2,
@@ -30,7 +30,7 @@
       "id": 4,
       "name": "Dr. Disrespect",
       "specializedIn": "Gastroenterology",
-      "free": false
+      "free": true
     },
     {
       "id": 5,

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 type Doctor = {
     id: number;
@@ -59,6 +59,7 @@ export function DoctorPage ({patient} : Props) {
                 <button
                     onClick={changeAvailability}   
                 >Change availability</button>
+                <Link to={"/appointment"}>Check appointment</Link>
 
             </div>
         </div>
