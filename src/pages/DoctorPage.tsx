@@ -56,10 +56,10 @@ export function DoctorPage ({patient} : Props) {
                 <p>Here is the doctor</p>
                 <p>For : {doctor.specializedIn}</p>
                 <p>Availability : {doctor.free ? "Free" : `Occupied for ${patient.time}, date ${patient.date}`}</p>
-                <button
+                <button className="setDoctor"
                     onClick={changeAvailability}   
                 >Change availability</button>
-                <Link to={"/appointment"}>Check appointment</Link>
+                <Link className="checkAppoint" to={"/appointment"}>Check appointment</Link>
 
             </div>
         </div>

@@ -1,24 +1,24 @@
 {
   "patient": {
-    "name": "Darvin Gaba",
-    "email": "darvingaba1@gmail.com",
-    "phone": "+355682651902",
-    "date": "2022-01-01",
-    "time": "13:00",
-    "symptoms": "I have my a stomach ache"
+    "name": "hi",
+    "email": "hi@i.com",
+    "phone": "13114123",
+    "date": "2023-01-01",
+    "time": "14:00",
+    "symptoms": "drhdt"
   },
   "doctors": [
     {
       "id": 1,
       "name": "Dr. Bill Joe",
       "specializedIn": "Allergies",
-      "free": true
+      "free": false
     },
     {
       "id": 2,
       "name": "Dr. Kim Jong Un",
       "specializedIn": "Cardiology",
-      "free": false
+      "free": true
     },
     {
       "id": 3,

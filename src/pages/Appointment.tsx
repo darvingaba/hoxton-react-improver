@@ -26,14 +26,9 @@ export function Appointment({patient, doctor}: Props) {
       <div className="appointmentPage">
         <div className="appointmentDetails">
           <h1>Hello {patient.name}</h1>
-          <p>
-            Details about appointment:
-            <p>
-              On {patient.date} at {patient.time}
-            </p>
-            <p>Your symptoms: {patient.symptoms}</p>
-            <p>Please be 10 minutes early on the hospital.</p>
-          </p>
+          {(doctor.free !== true) ? 
+              `Details about appointment: On ${patient.date} at ${patient.time}`: `No appointment set.`
+          }
         </div>
       </div>
     );

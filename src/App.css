@@ -144,3 +144,23 @@ button:hover{
   cursor: pointer;
   color: black;
 }
+.doctorPage{
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid #333;
+  cursor: pointer;
+  color: black;
+}
+.setDoctor{
+  width: 300px;
+  border: 1px solid #333;
+}
+.checkAppointment{
+  width: 300px;
+  border: 1px solid #333;
+  height: 50px;
+}

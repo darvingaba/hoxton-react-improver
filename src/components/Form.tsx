@@ -5,12 +5,15 @@ import { Link } from "react-router-dom";
 
 export function Form (){
 
-    let [name, setName] = useState("");
-    let [email, setEmail] = useState("");
-    let [phone, setPhone] = useState("");
-    let [date, setDate] = useState("");
-    let [time, setTime] = useState("");
-    let [symptoms, setSymptoms] = useState("");
+    let [user, setUser] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        date: "",
+        time: "",
+        symptoms: ""
+    });
+    
 
     return (
       <main>
@@ -27,11 +30,7 @@ export function Form (){
                   e.target.phone.value;
                   e.target.date.value;
                   e.target.time.value;
-                  console.log(e.target.symptoms.value);
-                  console.log(e.target.name.value);
-                  console.log(e.target.email.value);
-                  console.log(e.target.date.value);
-                  console.log(e.target.time.value);
+                  e.target.symptoms.value;
 
                   fetch("http://localhost:3001/patient", {
                     method: "POST",
@@ -49,12 +48,7 @@ export function Form (){
                   })
                     .then((res) => res.json())
                     .then((data) => {
-                      setName(data.name);
-                      setEmail(data.email);
-                      setPhone(data.phone);
-                      setDate(data.date);
-                      setTime(data.time);
-                      setSymptoms(data.symptoms);
+                      setUser(data);
                     });
                 }}
               >

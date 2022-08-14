@@ -10,9 +10,11 @@ export function Header(){
             <a href="#">Set yor Data</a>
           </li>
           </Link>
+          <Link to={"/appointment"}>
           <li className="appointments">
             <a href="#">Appointments</a>
           </li>
+          </Link>
         </ul>
       </header>
     );
